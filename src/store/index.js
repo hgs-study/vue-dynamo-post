@@ -8,11 +8,13 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state : {
         posts : '',
+        // postsCount : '',
     },
     getters : {
-        getContacts(state){
+        getPosts(state){
             return state.posts;
-        }
+        },
+       
     },
     mutations,
     actions,
