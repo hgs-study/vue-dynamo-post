@@ -1,11 +1,4 @@
-var AWS = require("aws-sdk");
-
-AWS.config.update({
-  region: "ap-northeast-2",
-  endpoint: "https://dynamodb.ap-northeast-2.amazonaws.com"
-});
-
-var dynamodb = new AWS.DynamoDB();
+import {dynamodb} from './config/aws-config.js'
 
 dynamodb.listTables({Limit: 10}, function(err, data) {
     if (err) {
@@ -13,4 +6,4 @@ dynamodb.listTables({Limit: 10}, function(err, data) {
     } else {
       console.log("Table names are ", data.TableNames);
     }
-  });
+});

@@ -5,6 +5,7 @@ AWS.config.update({
   endpoint: "http://localhost:8000"
 });
 
+
 var dynamodb = new AWS.DynamoDB();
 
 var params = {
