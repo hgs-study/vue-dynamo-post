@@ -7,9 +7,11 @@
             <th>ADDRESS</th>
             <th>NAME</th>
         </tr>
-        <tr v-for="list in getPosts" :key="list.product_id">
-            <th>{{list.product_id}}</th>
-            <th>{{list.type}}</th>
+        <tr v-for="list in getPosts.contacts" :key="list.pageno">
+            <th>{{list.no}}</th>
+            <th>{{list.tel}}</th>
+            <th>{{list.address}}</th>
+            <th>{{list.name}}</th>
         </tr>
       </table>
       <div id="btn-form">

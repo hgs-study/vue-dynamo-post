@@ -1,7 +1,6 @@
 {
   "name": "vue-dynamo-post",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
